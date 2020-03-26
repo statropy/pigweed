@@ -12,6 +12,11 @@
 # License for the specific language governing permissions and limitations under
 # the License.
 
+load(
+    "//pw_build:pigweed.bzl",
+    "pw_cc_test",
+)
+
 package(default_visibility = ["//visibility:public"])
 
 licenses(["notice"])  # Apache License 2.0
@@ -21,4 +26,9 @@ filegroup(
     srcs = [
         "sys_io_baremetal.cc",
     ],
+)
+
+pw_cc_test(
+    name = "pw_sys_io_baremetal_stm32f303_test",
+    srcs = ["sys_io_baremetal_test.cc"],
 )

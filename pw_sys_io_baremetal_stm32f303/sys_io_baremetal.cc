@@ -102,7 +102,6 @@ constexpr uint32_t kEnableUsart = 0x1u;
 
 // Layout of memory mapped registers for USART blocks.
 PW_PACKED(struct) UsartBlock {
-
   uint32_t control1;
   uint32_t control2;
   uint32_t control3;

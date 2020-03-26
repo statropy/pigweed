@@ -38,6 +38,7 @@ group("target_docs") {
     "$dir_pigweed/targets/docs:target_docs",
     "$dir_pigweed/targets/host:target_docs",
     "$dir_pigweed/targets/lm3s6965evb-qemu:target_docs",
+    "$dir_pigweed/targets/stm32f3discovery:target_docs",
     "$dir_pigweed/targets/stm32f429i-disc1:target_docs",
   ]
 }
@@ -85,6 +86,7 @@ pw_doc_gen("docs") {
     "$dir_pw_status:docs",
     "$dir_pw_string:docs",
     "$dir_pw_sys_io:docs",
+    "$dir_pw_sys_io_baremetal_stm32f303:docs",
     "$dir_pw_sys_io_baremetal_stm32f429:docs",
     "$dir_pw_sys_io_stdio:docs",
     "$dir_pw_target_runner:docs",
